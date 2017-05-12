@@ -1,0 +1,1 @@
+# test-angular-components-interaction
