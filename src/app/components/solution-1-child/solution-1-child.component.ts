@@ -2,8 +2,7 @@ import {
     Component,
     Input,
     OnChanges,
-    OnInit,
-    SimpleChanges
+    OnInit
 } from '@angular/core';
 
 @Component({
@@ -20,13 +19,7 @@ export class Solution1ChildComponent implements OnInit, OnChanges {
 
     ngOnInit() {}
 
-    ngOnChanges(changes: SimpleChanges) {
-        const isDataReceived = changes.moviesFromParent.currentValue;
-        // const isDataReceived = !changes.moviesFromParent.isFirstChange();
-        // const isDataReceived = this.moviesFromParent;
-
-        if (isDataReceived) {
-            this.childMovies = this.moviesFromParent;
-        }
+    ngOnChanges() {
+        this.childMovies = this.moviesFromParent;
     }
 }

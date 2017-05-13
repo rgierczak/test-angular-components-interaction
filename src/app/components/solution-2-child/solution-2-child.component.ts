@@ -22,6 +22,8 @@ export class Solution2ChildComponent implements OnInit, OnChanges {
 
     ngOnChanges(changes: SimpleChanges) {
         const isDataReceived = changes.moviesFromParent.currentValue;
+        // const isDataReceived = !changes.moviesFromParent.isFirstChange();
+        // const isDataReceived = this.moviesFromParent;
 
         if (isDataReceived) {
             this.childMovies = this.moviesFromParent;

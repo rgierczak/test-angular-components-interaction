@@ -4,7 +4,7 @@
 
 <hr>
 
-<article>
+<article *ngIf="childMovies">
     <ul class="movies-list" *ngFor="let movie of childMovies">
         <li>{{ movie.title }}, {{ movie.year }}</li>
     </ul>
