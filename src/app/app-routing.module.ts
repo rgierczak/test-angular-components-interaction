@@ -6,6 +6,9 @@ import {
 import {
     Solution2ParentComponent
 } from './components/solution-2-parent/solution-2-parent.component';
+import {
+    Solution3ParentComponent
+} from './components/solution-3-parent/solution-3-parent.component';
 
 const routes: Routes = [
     {
@@ -20,6 +23,10 @@ const routes: Routes = [
     {
         path: 'solution2',
         component: Solution2ParentComponent
+    },
+    {
+        path: 'solution3',
+        component: Solution3ParentComponent
     }
 ];
 
