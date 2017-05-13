@@ -7,12 +7,15 @@ import { RequestService } from '../../services/request.service';
     styleUrls: ['./solution-1-parent.component.scss']
 })
 export class Solution1ParentComponent implements OnInit {
-    private parentMovies;
+    parentMovies: Object;
 
-    constructor(private requestService: RequestService) {
-    }
+    constructor(private requestService: RequestService) {}
 
     ngOnInit() {
+        this.getMovies();
+    }
+
+    getMovies() {
         this.requestService.fetchMovies()
             .subscribe((response) => {
                 this.parentMovies = response.json();

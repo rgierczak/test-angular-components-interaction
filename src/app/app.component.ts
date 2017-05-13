@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    title = 'app works!';
+    routing: [Object] = [
+        {
+            link: '/solution1',
+            text: 'Solution 1'
+        }, {
+            link: '/solution2',
+            text: 'Solution 2'
+        }];
 }

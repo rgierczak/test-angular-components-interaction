@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from '../../services/request.service';
 
 @Component({
     selector: 'app-solution-2-parent',
@@ -6,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./solution-2-parent.component.scss']
 })
 export class Solution2ParentComponent implements OnInit {
-    constructor() {}
+    parentMovies: Object;
+    constructor(private requestService: RequestService) {}
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.getMovies();
+    }
+
+    getMovies() {
+        this.requestService.fetchMovies()
+            .subscribe((response) => {
+                this.parentMovies = response.json();
+            });
+    }
 }

@@ -1,4 +1,15 @@
-<h1>
-    {{title}}
-</h1>
+<nav>
+    <ul class="navigation">
+        <li *ngFor="let route of routing">
+            <a
+                routerLinkActive="active"
+                routerLink="{{ route.link }}">
+                    {{ route.text }}
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<hr>
+
 <router-outlet></router-outlet>
