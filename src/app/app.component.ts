@@ -19,5 +19,8 @@ export class AppComponent {
         }, {
             link: '/solution4',
             text: 'Solution 4'
+        }, {
+            link: '/solution5',
+            text: 'Solution 5'
         }];
 }

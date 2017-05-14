@@ -31,7 +31,18 @@ import {
 import {
     Solution4ParentComponent
 } from './components/solution-4-parent/solution-4-parent.component';
-import { Solution4Child2Component } from './components/solution-4-child-2/solution-4-child-2.component';
+import {
+    Solution4Child2Component
+} from './components/solution-4-child-2/solution-4-child-2.component';
+import {
+    Solution5ParentComponent
+} from './components/solution-5-parent/solution-5-parent.component';
+import {
+    Solution5ChildComponent
+} from './components/solution-5-child-1/solution-5-child-1.component';
+import {
+    Solution5Child2Component
+} from './components/solution-5-child-2/solution-5-child-2.component';
 
 @NgModule({
     declarations: [
@@ -44,7 +55,10 @@ import { Solution4Child2Component } from './components/solution-4-child-2/soluti
         Solution3ChildComponent,
         Solution4ParentComponent,
         Solution4Child1Component,
-        Solution4Child2Component
+        Solution4Child2Component,
+        Solution5ParentComponent,
+        Solution5ChildComponent,
+        Solution5Child2Component
     ],
     imports: [
         BrowserModule,
