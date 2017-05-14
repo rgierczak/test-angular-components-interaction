@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { RequestService } from './services/request.service';
+import { CommunicationService } from './services/communication.service';
 
 import { AppComponent } from './app.component';
 import {
@@ -43,6 +44,15 @@ import {
 import {
     Solution5Child2Component
 } from './components/solution-5-child-2/solution-5-child-2.component';
+import {
+    Solution6ParentComponent
+} from './components/solution-6-parent/solution-6-parent.component';
+import {
+    Solution6Child2Component
+} from './components/solution-6-child-2/solution-6-child-2.component';
+import {
+    Solution6Child1Component
+} from './components/solution-6-child-1/solution-6-child-1.component';
 
 @NgModule({
     declarations: [
@@ -58,7 +68,10 @@ import {
         Solution4Child2Component,
         Solution5ParentComponent,
         Solution5ChildComponent,
-        Solution5Child2Component
+        Solution5Child2Component,
+        Solution6ParentComponent,
+        Solution6Child2Component,
+        Solution6Child1Component
     ],
     imports: [
         BrowserModule,
@@ -66,8 +79,13 @@ import {
         HttpModule,
         AppRoutingModule
     ],
-    providers: [RequestService],
-    bootstrap: [AppComponent]
+    providers: [
+        RequestService,
+        CommunicationService
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule {
 }
