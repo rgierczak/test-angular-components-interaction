@@ -25,6 +25,13 @@ import {
 import {
     Solution3ChildComponent
 } from './components/solution-3-child/solution-3-child.component';
+import {
+    Solution4Child1Component
+} from './components/solution-4-child-1/solution-4-child-1.component';
+import {
+    Solution4ParentComponent
+} from './components/solution-4-parent/solution-4-parent.component';
+import { Solution4Child2Component } from './components/solution-4-child-2/solution-4-child-2.component';
 
 @NgModule({
     declarations: [
@@ -34,7 +41,10 @@ import {
         Solution1ParentComponent,
         Solution2ParentComponent,
         Solution3ParentComponent,
-        Solution3ChildComponent
+        Solution3ChildComponent,
+        Solution4ParentComponent,
+        Solution4Child1Component,
+        Solution4Child2Component
     ],
     imports: [
         BrowserModule,
@@ -45,4 +55,5 @@ import {
     providers: [RequestService],
     bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}

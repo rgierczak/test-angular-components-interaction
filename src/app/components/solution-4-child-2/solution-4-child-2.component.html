@@ -1,0 +1,11 @@
+<header>
+    <h3>Data received from parent component - solution 4</h3>
+</header>
+
+<hr>
+
+<article>
+    <ul class="movies-list" *ngFor="let movie of childMovies">
+        <li>{{ movie.title }}, {{ movie.year }}</li>
+    </ul>
+</article>
